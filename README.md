@@ -6,6 +6,8 @@ learning them to better understand the changes that happened in React from the p
 
 This is strictly a learning sandbox for myself on my own free time.
 
+My practice components can be found under the "components" folder under the "src" folder.
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

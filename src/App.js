@@ -14,12 +14,17 @@ import NameList from './components/NameList'
 import Form from './components/Form'
 import PureComp from './components/PureComp'
 import ParentComp from './components/ParentComp'
+import RefsDemo from './components/RefsDemo'
+import ForwardRefParentInput from './components/ForwardRefParentInput'
+import PortalDemo from './components/PortalDemo'
 
 function App() {
   return (
     <div className="App">
       {
-        /*<Greet name="Douglas" nickname="Doug">
+        /*
+      UNCOMMENT A MODULE BELOW TO TEST IT, SOME MODULES RELY ON OTHERS, SEE HEADERS FOR THOSE COMPONENTS IF DEPENDENT
+      <Greet name="Douglas" nickname="Doug">
         This is child text.
       </Greet>
       <Greet name="James" nickname="Jim">
@@ -35,8 +40,11 @@ function App() {
       <ConditionalGreeting />
       <NameList />
       <Form />
+      <ParentComp />
+      <RefsDemo />
+      <ForwardRefParentInput />
       */
-        <ParentComp />
+        <PortalDemo />
       }
     </div>
   )

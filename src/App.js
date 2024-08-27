@@ -17,12 +17,17 @@ import ParentComp from './components/ParentComp'
 import RefsDemo from './components/RefsDemo'
 import ForwardRefParentInput from './components/ForwardRefParentInput'
 import PortalDemo from './components/PortalDemo'
+import ErrorCatch from './components/ErrorCatch'
+import ErrorBoundary from './components/ErrorBoundary'
+import ClickCounter from './components/ClickCounter'
+import HoverCounter from './components/HoverCounter'
 
 function App() {
+  //class App extends Component{
+  //  render(){
   return (
     <div className="App">
-      {
-        /*
+      {/*
       UNCOMMENT A MODULE BELOW TO TEST IT, SOME MODULES RELY ON OTHERS, SEE HEADERS FOR THOSE COMPONENTS IF DEPENDENT
       <Greet name="Douglas" nickname="Doug">
         This is child text.
@@ -43,9 +48,14 @@ function App() {
       <ParentComp />
       <RefsDemo />
       <ForwardRefParentInput />
-      */
-        <PortalDemo />
-      }
+      <PortalDemo />
+      <ErrorCatch employeeName="Doug"></ErrorCatch>
+      <ErrorBoundary>
+          <ErrorCatch employeeName="Tom" />
+        </ErrorBoundary>
+      */}
+      <ClickCounter name="Doug" />
+      <HoverCounter />
     </div>
   )
 }
